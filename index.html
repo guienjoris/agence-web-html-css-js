@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agence Web</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+    
+    <div class="background">
+            <div id="menu" >
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div> 
+                    <nav id="nav">
+                        <a href="#">|ACCUEIL |</a>
+                        <a href="#presentation">|PRESENTATION |</a>
+                        <a href="#domaines">|NOS DOMAINES |</a>
+                        <a href="#moi">|EQUIPE|</a>
+                        <a href="#formulaire">|FORMULAIRE|</a>
+                    </nav>
+
+            </div>
+            
+        <img src="./media/back_1.jpg" alt="fond header">
+        <img src="./media/back_2.jpg" alt="fond header 2">
+        <div class="header_description">
+                <img src="./media/avatar-32920-2d18dc0.png" alt=" logo">
+                <h1>Agence Web </h1>
+                <h2>Agence digitale & technique</h2>
+                <ion-icon name="arrow-down"></ion-icon>
+
+        </div>
+            
+    </div>
+    
+</header>
+<div class="contact_border">
+    <div class="contact_icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </div>
+</div>
+<section id="presentation">
+    <div>
+        <h3> Agence Web est né 2019 </h3>
+        <h2>Agence web, nous accompagnons nos clients dans la création de site internet: étude, UX, conception, design, développement, SEO.
+                Notre agence web est capable de répondre à tous vos besoins et d'élaborer une véritable stratégie digitale.</h2>
+        <p>11 Récompenses à notre palmarès</p>
+    </div>
+</section>
+<div class="intersection"></div>
+<section id="domaines">
+    <h1>
+        Domaines d'expertises
+    </h1>
+    <div class="container">
+    <div class="block_un">
+        <h1>Conception UX Design &
+                User Interface</h1>
+        <p>L'ergonomie d'un site Internet doit le rendre intuitif à comprendre et à utiliser. 
+            L'UX Design couvre à la fois l'ergonomie, l'étude du comportement, l'ethonologie, le contenu et la navigation.</p>
+    </div>
+    <div class="block_deux">
+        <video src="./media/video-ux-design.mp4" autoplay loop></video>
+    </div>
+</div>
+    <div class="container">
+            <div class="block_un">
+                    <video src="./media/video-web-print.mp4" autoplay loop></video>
+            </div>
+            <div class="block_deux">
+                    <h1>Design graphique
+                            web et print</h1>
+                    <p>
+
+                    La fonction première du design est d'améliorer l'expérience que l'on a d'un produit ou service. Il n'est pas que décoratif mais fait le lien entre vous et la technologie. 
+                    Les DA et Webdesigner de notre agence web vous accompagnent pour répondre aux dernières tendances, et faire que votre design dure quelques années.</p>
+            </div>
+</div>
+<div class="container">
+        <div class="block_un">
+                <h1>Data Analytics
+                        & web marketing</h1>
+                <p>Connaître votre marché et les tendances du moment. Être conseillé par des experts en communication web et être épaulé par des graphistes dédiés pour votre projet. 
+                De l'expression de vos besoins aux conseils permettant de mieux exprimer votre identité visuelle, Fidesio vous accompagne et vous conseille.</p>
+        </div>
+        <div class="block_deux">
+                <video src="./media/video-marketing.mp4" autoplay loop></video>
+        </div>
+</div>
+<div class="container">
+        <div class="block_un">
+                <video src="./media/video-developpement-mobile.mp4" autoplay loop></video>
+
+        </div>
+        <div class="block_deux">
+                <h1>Développement web
+                        & mobile</h1>
+                <p>Vous êtes une entreprise de communication et vous recherchez un pure player pour vous épauler et développer votre pôle intéractif? Vous êtes un entreprise et rechercher une agence capable de vous accompagner sur toutes les technologies web?</p>
+        </div>
+</div>
+<div class="container">
+        <div class="block_un">
+            <h1>Référencement & SEO</h1>
+            <p>Le référencement a pour objectif d'intégrer, de positionner et de maintenir votre site internet en tête des classements 
+                des moteurs de recherche afin de générer le plus fort trafic.</p>
+        </div>
+        <div class="block_deux">
+                <video src="./media/video-referencement.mp4" autoplay loop></video>
+        </div>
+</div>
+<div class="intersection"></div>
+
+</section>
+<h1>Notre équipe</h1>
+
+<section id="moi">
+    <div>
+        <ion-icon name="person"></ion-icon>
+        <h2>Designer</h2>
+        <p class="moi_description">La personne chargé du design</p>
+
+    </div>
+    <div>
+        <ion-icon name="person"></ion-icon>
+        <h2>Developpeur</h2>
+        <p class="moi_description">La personne la plus importante de l'équipe</p>
+    </div>
+    <div>
+        <img src="./media/avatarmoipetit.jpeg" alt="photo fondateur">
+        <h2>Guien Joris</h2>
+        <p class="moi_bold"> PDG</p>
+        <p class="moi_description">Fondateur de Agence Web, après une formation chez Simplon.co dont il est sorti avec d'excellents résultats, il décida de monter sa boîte avec le succès qu'on lui connait.</p>
+    </div>
+</section>
+<div class="intersection"></div>
+
+<section id="formulaire">
+    <h1 id="contact_btn" onclick="display()">Cliquez ici pour nous contacter!</h1>
+    <div id="div_contact">
+        <label for="name" autofocus>Nom: </label>
+        <input type="text" name="name" required>
+        <label for="firstname">Prénom: </label>
+        <input type="text" name="firstname">
+        <label for="email">Email: </label>
+        <input type="email" name="email">
+        <label for="tel">Téléphone:</label>
+        <input type="tel" name="tel" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="01-23-45-67-89">
+        <label for="message"> Votre message: </label>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <button>Envoyer</button>
+    </div>
+    </section>
+        <footer>
+                <div id="contact">
+                    <h1>Agence Web</h1>
+                    <img src="./media/avatar-32920-2d18dc0.png" alt=" logo">
+                    <p>51 rue de Seine, 75006 Paris</p>
+                    <p id="copyright">© Copyright by Guien Joris 2019</p>
+                </div>
+        </footer>
+    
+    <script src="./script/script.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
