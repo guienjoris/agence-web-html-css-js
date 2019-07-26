@@ -28,7 +28,7 @@ header #menu {
 
 header #menu nav {
   display: none;
-  margin-top: 1%;
+  margin-top: -1%;
 }
 
 header #menu nav a {
@@ -250,10 +250,6 @@ header .header_description ion-icon {
 
 #moi p, #moi h2 {
   color: white;
-}
-
-#moi .moi_bold {
-  font-weight: bold;
 }
 
 #moi .moi_description {

@@ -25,7 +25,7 @@ header{
     cursor: pointer;
     nav{
         display:none;
-        margin-top:1%;
+        margin-top:-1%;
 
         a{
             font-size:200%;
@@ -185,9 +185,7 @@ header{
     p,h2{
         color:white;
     }
-    .moi_bold{
-        font-weight:bold;
-    }
+    
     .moi_description{
         font-style:italic;
     }
