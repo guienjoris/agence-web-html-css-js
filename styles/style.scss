@@ -82,7 +82,7 @@ header{
 }
 @keyframes blink {
     0%{ color:gray}
-    50%{color:white}
+    50%{color:white;margin-top:10%;}
     100%{color:gray}
 }
 .contact_border{
@@ -205,6 +205,12 @@ header{
         width:30%;
         margin-left:50%;
         transform:translate(-50%);
+        margin-bottom:1%;
+        button{
+            width:100px;
+            margin-left:50%;
+        transform:translate(-50%);
+        }
     }
     
 
@@ -348,5 +354,34 @@ footer{
         .moi_description{
             font-style:italic;
         }
+    }
+    .header_description{
+        position:absolute;
+        top:50%;
+        left:50%;
+        color:white;
+        transform: translate(-50%,-50%);
+        text-align:center;
+        img{
+            width:20%;
+            border-radius:50%;
+        }
+        h1,h2{
+            font-size:100%;
+        }
+        ion-icon{
+            font-size:50%;
+            color: white;
+            animation-name: blink;
+            animation-duration: 1s; 
+            animation-iteration-count:infinite;
+        }
+    }
+    
+    
+    @keyframes blink {
+        0%{ color:gray}
+        50%{color:white;margin-top:10%;}
+        100%{color:gray}
     }
 }

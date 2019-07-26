@@ -68,7 +68,7 @@ function toggle_f(){
         ion_icon[4].style.color = "black";
         domaines.style.color="black";
         presentation.style.color = "black";
-        document.body.style.backgroundColor="white";
+        document.body.style.backgroundColor="#F8FAFB";
         localStorage.setItem('modenuit', 'jour');
 
     }

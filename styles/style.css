@@ -105,6 +105,7 @@ header .header_description ion-icon {
   }
   50% {
     color: white;
+    margin-top: 10%;
   }
   100% {
     color: gray;
@@ -117,6 +118,7 @@ header .header_description ion-icon {
   }
   50% {
     color: white;
+    margin-top: 10%;
   }
   100% {
     color: gray;
@@ -276,6 +278,14 @@ header .header_description ion-icon {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 30%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-bottom: 1%;
+}
+
+#formulaire #div_contact button {
+  width: 100px;
   margin-left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -443,6 +453,56 @@ footer img {
   }
   #moi .moi_description {
     font-style: italic;
+  }
+  .header_description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header_description img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .header_description h1, .header_description h2 {
+    font-size: 100%;
+  }
+  .header_description ion-icon {
+    font-size: 50%;
+    color: white;
+    -webkit-animation-name: blink;
+            animation-name: blink;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      color: gray;
+    }
+    50% {
+      color: white;
+      margin-top: 10%;
+    }
+    100% {
+      color: gray;
+    }
+  }
+  @keyframes blink {
+    0% {
+      color: gray;
+    }
+    50% {
+      color: white;
+      margin-top: 10%;
+    }
+    100% {
+      color: gray;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */
