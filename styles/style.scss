@@ -11,7 +11,7 @@ body{
 
 }
 header{
-#menu{
+.menu{
     transition:2s;
     position:fixed;
     right:0;
@@ -47,6 +47,57 @@ header{
     height: 5px;
     background-color: white;
     margin: 6px 0;
+    }
+}
+.menu_display{
+    transition:2s;
+    position:fixed;
+    right:0;
+    background-color:rgb(197, 197, 193);
+    padding:1% 1%;
+    width:96vw;
+    height:7vh;
+    z-index: 10;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    nav{
+        display:block;
+        margin-top:-1%;
+
+        a{
+            font-size:200%;
+            margin: 0% 3%;
+            text-decoration: none;
+            transition:0.5s;
+            color:white;
+            &:hover{
+                font-weight:bold;
+                font-size:250%;
+            }
+        }
+    }
+    &:hover{
+        background-color: rgb(117, 117, 163);
+    }
+    div{
+    width: 20px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transform:rotate(90deg);
+    }
+    .burger_un{
+        width: 20px;
+
+        transform:rotate(45deg);
+    }
+    .burger_deux{
+        width: 20px;
+
+        transform: rotate(135deg);
+    }
+    .burger_none{
+        display:none;
     }
 }
 .background{
@@ -199,8 +250,21 @@ header{
             cursor:pointer;
         }
     }
-    #div_contact{
+    .div_contact{
         display:none;
+        flex-direction:column;
+        width:30%;
+        margin-left:50%;
+        transform:translate(-50%);
+        margin-bottom:1%;
+        button{
+            width:100px;
+            margin-left:50%;
+        transform:translate(-50%);
+        }
+    }
+    .div_contact_flex{
+        display:flex;
         flex-direction:column;
         width:30%;
         margin-left:50%;
@@ -238,20 +302,20 @@ footer{
 }
 @media screen and (max-width: 1400px) {
     header{
-        #menu{
+        .menu_display{
             transition:2s;
             position:fixed;
             right:0;
             background-color:rgb(117, 117, 193);
             padding:1% 1%;
-            width:30px;
-            height:30px;
+            width:96vw;
+            height:7vh;
             z-index: 10;
             overflow: hidden;
             box-shadow: 1px 1px 3px black;
             cursor: pointer;
             nav{
-                display:none;
+                display:block;
                 margin-top:1%;
         
                 a{

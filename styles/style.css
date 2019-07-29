@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-header #menu {
+header .menu {
   -webkit-transition: 2s;
   transition: 2s;
   position: fixed;
@@ -26,12 +26,12 @@ header #menu {
   cursor: pointer;
 }
 
-header #menu nav {
+header .menu nav {
   display: none;
   margin-top: -1%;
 }
 
-header #menu nav a {
+header .menu nav a {
   font-size: 200%;
   margin: 0% 3%;
   text-decoration: none;
@@ -40,20 +40,83 @@ header #menu nav a {
   color: white;
 }
 
-header #menu nav a:hover {
+header .menu nav a:hover {
   font-weight: bold;
   font-size: 250%;
 }
 
-header #menu:hover {
+header .menu:hover {
   background-color: #7575a3;
 }
 
-header #menu div {
+header .menu div {
   width: 30px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
+}
+
+header .menu_display {
+  -webkit-transition: 2s;
+  transition: 2s;
+  position: fixed;
+  right: 0;
+  background-color: #c5c5c1;
+  padding: 1% 1%;
+  width: 96vw;
+  height: 7vh;
+  z-index: 10;
+  -webkit-box-shadow: 1px 1px 3px black;
+          box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+header .menu_display nav {
+  display: block;
+  margin-top: -1%;
+}
+
+header .menu_display nav a {
+  font-size: 200%;
+  margin: 0% 3%;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: white;
+}
+
+header .menu_display nav a:hover {
+  font-weight: bold;
+  font-size: 250%;
+}
+
+header .menu_display:hover {
+  background-color: #7575a3;
+}
+
+header .menu_display div {
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header .menu_display .burger_un {
+  width: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .menu_display .burger_deux {
+  width: 20px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+header .menu_display .burger_none {
+  display: none;
 }
 
 header .background {
@@ -271,7 +334,7 @@ header .header_description ion-icon {
   cursor: pointer;
 }
 
-#formulaire #div_contact {
+#formulaire .div_contact {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -284,7 +347,29 @@ header .header_description ion-icon {
   margin-bottom: 1%;
 }
 
-#formulaire #div_contact button {
+#formulaire .div_contact button {
+  width: 100px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#formulaire .div_contact_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-bottom: 1%;
+}
+
+#formulaire .div_contact_flex button {
   width: 100px;
   margin-left: 50%;
   -webkit-transform: translate(-50%);
@@ -323,26 +408,26 @@ footer img {
 }
 
 @media screen and (max-width: 1400px) {
-  header #menu {
+  header .menu_display {
     -webkit-transition: 2s;
     transition: 2s;
     position: fixed;
     right: 0;
     background-color: #7575c1;
     padding: 1% 1%;
-    width: 30px;
-    height: 30px;
+    width: 96vw;
+    height: 7vh;
     z-index: 10;
     overflow: hidden;
     -webkit-box-shadow: 1px 1px 3px black;
             box-shadow: 1px 1px 3px black;
     cursor: pointer;
   }
-  header #menu nav {
-    display: none;
+  header .menu_display nav {
+    display: block;
     margin-top: 1%;
   }
-  header #menu nav a {
+  header .menu_display nav a {
     font-size: 100%;
     margin: 0% 3%;
     text-decoration: none;
@@ -350,14 +435,14 @@ footer img {
     transition: 0.5s;
     color: white;
   }
-  header #menu nav a:hover {
+  header .menu_display nav a:hover {
     font-weight: bold;
     font-size: 150%;
   }
-  header #menu:hover {
+  header .menu_display:hover {
     background-color: #7575a3;
   }
-  header #menu div {
+  header .menu_display div {
     width: 30px;
     height: 5px;
     background-color: white;
