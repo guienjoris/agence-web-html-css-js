@@ -309,7 +309,7 @@ footer{
             background-color:rgb(117, 117, 193);
             padding:1% 1%;
             width:96vw;
-            height:7vh;
+            height:10vh;
             z-index: 10;
             overflow: hidden;
             box-shadow: 1px 1px 3px black;
@@ -342,8 +342,6 @@ footer{
             }
         }
   }
-}
-@media screen and (max-width: 1400px) {
     #domaines{
         margin-left:50%;
         transform:translate(-50%);
