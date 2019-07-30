@@ -63,9 +63,9 @@ header .menu_display {
   right: 0;
   background-color: #c5c5c1;
   padding: 1% 1%;
-  width: 96vw;
+  width: 100vw;
   height: 7vh;
-  z-index: 10;
+  z-index: 20;
   -webkit-box-shadow: 1px 1px 3px black;
           box-shadow: 1px 1px 3px black;
   cursor: pointer;
@@ -196,7 +196,7 @@ header .header_description ion-icon {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .contact_border ion-icon {
@@ -501,6 +501,46 @@ footer img {
 }
 
 @media screen and (max-width: 800px) {
+  header .menu_display {
+    -webkit-transition: 2s;
+    transition: 2s;
+    position: fixed;
+    right: 0;
+    background-color: #7575c1;
+    padding: 1% 1%;
+    width: 96vw;
+    height: 10vh;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 3px black;
+            box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+  }
+  header .menu_display nav {
+    display: block;
+    margin-top: 1%;
+  }
+  header .menu_display nav a {
+    font-size: 85%;
+    margin: 0% 3%;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: white;
+  }
+  header .menu_display nav a:hover {
+    font-weight: bold;
+    font-size: 150%;
+  }
+  header .menu_display:hover {
+    background-color: #7575a3;
+  }
+  header .menu_display div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
   #moi {
     display: -webkit-box;
     display: -ms-flexbox;

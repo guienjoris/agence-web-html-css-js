@@ -17,7 +17,7 @@ function display(){
     div_contact.classList.toggle('div_contact_flex');
 }
 document.body.addEventListener("click", (e)=>{
-    if (e.target != menu){
+    if (e.target != menu && burgerbar){
     if(menu.classList = "menu_display"){
         menu.classList.remove("menu_display");
         menu.classList.add("menu");
