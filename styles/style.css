@@ -297,15 +297,24 @@ header .header_description ion-icon {
 }
 
 #moi div {
-  width: 33%;
+  width: 40%;
 }
 
 #moi img {
   margin: 2%;
-  width: 10%;
+  padding: 1%;
+  width: 25%;
   border: 1px solid black;
   -webkit-box-shadow: 1px 1px 1px black;
           box-shadow: 1px 1px 1px black;
+}
+
+#moi .smaelle {
+  width: 45%;
+}
+
+#moi .mrrobot {
+  width: 45%;
 }
 
 #moi ion-icon {
@@ -416,7 +425,7 @@ footer img {
     background-color: #7575c1;
     padding: 1% 1%;
     width: 96vw;
-    height: 7vh;
+    height: 10vh;
     z-index: 10;
     overflow: hidden;
     -webkit-box-shadow: 1px 1px 3px black;
@@ -448,9 +457,6 @@ footer img {
     background-color: white;
     margin: 6px 0;
   }
-}
-
-@media screen and (max-width: 1400px) {
   #domaines {
     margin-left: 50%;
     -webkit-transform: translate(-50%);

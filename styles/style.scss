@@ -221,13 +221,20 @@ header{
     margin-left:50%;
     transform: translate(-50%);
     div{
-        width:33%;
+        width:40%;
     }
     img{
         margin:2% ;
-        width:10%;
+        padding:1%;
+        width:25%;
         border:1px solid black;
         box-shadow:1px 1px 1px black;
+    }
+    .smaelle{
+        width:45%;
+    }
+    .mrrobot{
+        width:45%;
     }
     ion-icon{
         font-size:800%;
