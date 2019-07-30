@@ -16,10 +16,18 @@ window.onload = ()=>{
 function display(){
     div_contact.classList.toggle('div_contact_flex');
 }
+document.body.addEventListener("click", (e)=>{
+    if (e.target != menu){
+    if(menu.classList = "menu_display"){
+        menu.classList.remove("menu_display");
+        menu.classList.add("menu");
+    }
+}
+})
+
 menu.addEventListener("click", ()=>{ 
     menu.classList.toggle('menu_display');
 });
-
 function toggle_f(){
     var toggleAttribute= toggle.getAttribute("name") ;
     console.log(toggleAttribute);
